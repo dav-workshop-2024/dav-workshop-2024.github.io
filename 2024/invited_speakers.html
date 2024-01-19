@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang='en'>
+<style>
+
+.container {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 2fr;
+    column-gap: 5px;
+   }
+</style>
+
+<head>
+    <base href=".">
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
+    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
+    <meta name="description" content="Conference Template">
+    <meta name="resource-type" content="document">
+    <meta name="distribution" content="global">
+    <meta name="KeyWords" content="Conference">
+    <title>DAV</title>
+</head>
+
+<body>
+
+    <div class="banner">
+        <div class="imgbox">
+        <img class= "center-fit" src="assets/banner.jpg" alt="Conference Template Banner">
+        </div>
+        <div class="top-left">
+            <span class="title1"></span><span class="title2">DAV</span> <span class="year">2023</span>
+        </div>
+        <div class="bottom-right">
+             Deep Learning-aided Verification <br> July 18, 2023 <br> Paris, France
+        </div>
+    </div>
+
+    <table class="navigation">
+        <tr>
+            <td class="navigation">
+                <a title="Conference Home Page" href="index.html">Home</a>
+            </td>
+            <td class="navigation">
+                <a title="Workshop Committee" href="committee.html">Committee</a> 
+            </td>
+            <td class="navigation">
+                <a title="Call for Papers" href="cfp.html">CFP</a>
+            </td>
+            <td class="navigation">
+                <a class="current" title="Invited Speakers" href="invited_speakers.html">Invited Speakers</a>
+            </td>
+            <td class="navigation">
+                <a title="Program" href="program.html">Program</a>
+            </td>
+            <td class="navigation">
+                <a title="Code of Conduct" href="coc.html">CoC</a>
+            </td>
+        </tr>
+    </table>
+
+    <h2>Invited Speakers<br></span><br></h2>
+        <p>
+        <div class="container">
+            <img src="assets/cristina.jpeg" width="200" height="auto" alt="Conference Template Banner">
+            <div><a href="https://cristina-david.github.io/"><h2>Cristina David</h2></a><h4>Senior Lecturer and Royal Society University Research Fellow, University of Bristol, UK</h4>
+            <h4>Lessons learnt from using GNNs to estimate program termination</h4>
+            Termination analyses investigate the termination behaviour of programs in order 
+            to prevent a variety of program bugs (e.g. hanging programs, denial-of-service vulnerabilities). 
+            Usually, such analyses make use of formal methods and provide certificates of correctness in 
+            the form of ranking functions or recurrence sets. In this work, we move away from formal methods 
+            and embrace the stochastic nature of machine learning models. Instead of aiming for rigorous guarantees 
+            that can be interpreted by solvers, our objective is to provide an estimation of a program's termination 
+            behaviour and of the likely reason for nontermination (when applicable) that a programmer can use for 
+            debugging purposes.
+            
+            In this talk I will discuss our experience using Graph Neural Networks and semantic segmentation for 
+            this purpose, as well as the challenges we encountered and possible solutions.
+        </div>
+        </div>
+        </p>
+        <p>
+        <div class="container">
+            <img src="assets/yuriy.jpg" width="200" height="auto" alt="Conference Template Banner">
+            <div><a href="https://people.cs.umass.edu/~brun/"><h2>Yuriy Brun</h2></a><h4>Professor, University of Massachusetts, USA</h4>
+            <h4>Automated Formal Verification</h4>
+            Formal verification is a promising method for building correct software.
+Unfortunately, its cost is prohibitively high, and nearly all shipped
+software today is unverified. I will discuss how latest breakthroughs in
+natural language processing technology can help automate writing formal
+verification proofs. Specifically, language models trained on corpora of
+human-written proofs can either generate entire proofs or be used to guide a
+search-based method for synthesizing proofs. The formal verification domain
+is unique in that the proofs can be machine checked by a theorem prover. As a
+result, no incorrect proof is ever returned by our systems -- either we fail
+to synthesize a proof, or the proof we return is guaranteed to be correct.
+This makes the formal verification domain especially well-suited for cutting
+edge NLP technology, such as large-language models.
+            </div>
+            </div>
+        </p>
+        <p>
+            <div class="container">
+                <img src="assets/jingxuan.jpg" width="200" height="auto" alt="Conference Template Banner">
+                <div><a href="https://www.sri.inf.ethz.ch/people/jingxuan"><h2>Jingxuan He</h2></a><h4>Ph.D. Student, ETH Zurich, Switzerland</h4>
+                <h4>Large Language Models for Code: Security Hardening and Adversarial Testing</h4>
+                Large language models (large LMs) trained on massive code corpora are increasingly used to generate programs. However, LMs lack awareness of security and are found to frequently produce unsafe code. In this talk, I will present our recent work that addresses LMs’ limitation in security along two important axes: (i) security hardening, which aims to enhance LMs' reliability in generating secure code, and (ii) adversarial testing, which seeks to evaluate LMs' security at an adversarial standpoint.
+            </div>
+                </div>
+            </p>
+
+    <footer>
+        &copy; Christopher Hahn and Markus N. Rabe
+        &nbsp;|&nbsp; Design by <a href="https://github.com/mikepierce">Mike Pierce</a>
+        &nbsp;|&nbsp; Picture by Pierre Blaché from Paris, France, CC0, via Wikimedia Commons
+    </footer>
+
+</body>
+</html>
